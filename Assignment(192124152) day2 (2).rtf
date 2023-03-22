@@ -1,0 +1,121 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ITA0448 - RR PROGRAMMING\
+NARESH GUPTHA\
+192124152\
+\
+1. The built-in vector LETTERS contains the uppercase letters of the alphabet. Produce a vector of\
+(i) the first 12 letters\
+Code:\
+Input:\
+print(t)\
+print("Last 10 letters in upper case:")\
+t = tail(LETTERS, 12)\
+print(t)\
+print("Letters between 1 to 10th letters in upper case:")\
+e = tail(LETTERS[1:12])\
+print(e)\
+Output:\
+[1] "Last 10 letters in upper case:"\
+ [1] "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"\
+[1] "Letters between 1 to 10th letters in upper case:"\
+[1] "G" "H" "I" "J" "K" "L"\
+(ii) the odd \'91numbered\'92 letters\
+Code:\
+Input:\
+num = 13\
+if((num %% 2) == 0) \{\
+print(paste(num,"is Even"))\
+\} else \{\
+print(paste(num,"is Odd"))\
+\}\
+output:\
+[1] "13 is Odd"\
+(iii) the (English) consonants.\
+Code:\
+Input:\
+print(t)\
+print("Last 10 letters in upper case:")\
+t = tail(LETTERS, 10)\
+print(t)\
+print("Letters between 1 to 13 letters in upper case:")\
+e = tail(LETTERS[1:13])\
+print(e)\
+Output:\
+[1] "Last 10 letters in upper case:"\
+ [1] "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"\
+[1] "Letters between 1 to 13 letters in upper case:"\
+[1] "H" "I" "J" "K" "L" "M"\
+2. The function rnorm() generates normal random variables. For instance, rnorm(10) gives a vector\
+of 10 i.i.d. standard normals. Generate 20 standard normals, and store them as x. Then obtain\
+subvectors of\
+(i) the entries in x which are less than 1\
+Code:\
+Input:\
+rnorm(20,0,1)\
+Output:\
+[1] -0.088045240 -0.729242032 -0.480808910 -1.990438088 -1.559455563\
+ [6]  0.062536966 -0.764611097  2.601540548 -1.248520256  0.363471561\
+[11]-1.087711911  0.825376487  0.157459726  1.539458699  0.004567165\
+[16] -0.044958735  1.096499042  1.724888331  0.200374544 -0.526152404\
+(ii) the entries between \'96 0.5 and 1\
+Code:\
+Input:\
+rnorm(0.5,0,1)\
+Output;\
+numeric(0)\
+(iii) the entries whose absolute value is larger than 1.5.\
+Input:\
+rnorm(20,0,1)\
+Output:\
+[1] -1.42946132  0.34281115  0.85348952 -1.74989089  0.53188410 -1.06360058\
+ [7]  1.02541209  1.51156994  0.90520709  0.07022828  1.35627769 -0.74233582[13] -1.72973071 -0.44984341 -1.46333267 -1.23071187 -0.02137629  0.56008918\
+[19] -0.91258497 -1.23570662\
+3. Solve the following system of simultaneous equations using matrix methods.\
+a + 2b + 3c + 4d + 5e = \uc0\u8722 5\
+2a + 3b + 4c + 5d + e = 2\
+3a + 4b + 5c + d + 2e = 5\
+4a + 5b + c + 2d + 3e = 10\
+5a + b + 2c + 3d + 4e = 11\
+4. Create a factor object for an apple color such as ;green;, ;green;;yellow;, ;red;red, ;red\
+green;. Print the factor and applying the nlevels function to know the number of distinct\
+values\
+Code:\
+Input:\
+color <- factor(c("green", "green", "yellow", "red", "red", "red", "green")); \
+color\
+nlevels(color)\
+Output:\
+[1] green  green  yellow red    red    red    green \
+Levels: green red yellow\
+[1] 3\
+5. Create an S3 object of class fruit contains a list with following required components such\
+as name, quantity, cost and also Define and create s4 objects.Define a reference class of\
+fruit\
+Code:\
+Input:\
+fruit<- list(name = "apple", cost = 20, quantity = "15")\
+class(fruit) <- "fruit_Info"\
+fruit\
+Output:\
+$name\
+[1] "apple"\
+\
+$cost\
+[1] 20\
+\
+$quantity\
+[1] "15"\
+\
+attr(,"class")\
+[1] "fruit_Info"\
+\
+\
+\
+\
+}
